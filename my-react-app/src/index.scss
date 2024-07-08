@@ -71,13 +71,6 @@ header {
 }    
 }
 
-
-
-
-
-
-
-
 footer {
     padding-top: 66px;
     padding-bottom: 29px ;
@@ -89,6 +82,27 @@ footer {
         img {
             width: 122px;
     }
+}
+
+.Error {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 72px;
+ h1{
+    color: #FF6060;
+    font-size: 180px;
+    margin: 0;
+    }
+
+ p {
+    color: #FF6060;
+ }
+
+ .lien {
+    color: black;
+    margin-bottom: 139px;
+ }
 }
 
 
