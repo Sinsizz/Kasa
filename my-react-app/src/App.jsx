@@ -1,16 +1,16 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Card from './Card.jsx'
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import Card from './Card.jsx';
+import data from "./data.json";
 
 function App() {
-  
-  return(
+  return (
     <>
-    <Header/>
-    <Card/>
-    <Footer/>
+      <Header />
+      <Card data={data} />
+      <Footer />
     </>
   );
 }
 
-export default App
+export default App;

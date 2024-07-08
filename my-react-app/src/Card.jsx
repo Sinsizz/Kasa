@@ -1,14 +1,20 @@
+/* eslint-disable react/prop-types */
 
-function Card(){
-    return(
-        <main>
-        <section className="content">
-        <div className="card">
-            <p className="title-card">titre de la location</p>
+function Card({ data }) {
+    return (
+      <section className="background">
+        <div className="content">
+        {data.map((item, index) => (
+          <div className="card" key={index}>
+            <img src={item.cover} alt={item.title} className="cover-image" />
+            <p className="title-card">{item.title}</p>
+          </div>
+          
+        ))}
         </div>
-       </section>
-       </main>
-       );
-}
-   
-export default Card
+      </section>
+    );
+  }
+  
+  export default Card;
+  
