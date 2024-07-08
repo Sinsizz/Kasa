@@ -7,6 +7,10 @@ function App() {
   return (
     <>
       <Header />
+      <div className='Banner'>
+      <img src="/src/assets/banner1.png" alt="image de montagne avec un titre" />
+      <h3 className='banner-text'>Chez vous, partout et ailleurs</h3>
+      </div>
       <Card data={data} />
       <Footer />
     </>
