@@ -185,17 +185,20 @@ footer {
         margin-left: 208.5px;
         margin-right: 208.5px;
         padding: 10px;
+        max-height: 0px;
         transform: translateY(-100%);
         transition: transform 0.5s ease;
         visibility: hidden;
         white-space: pre-line;
+        margin-bottom: 10px;
     }
 
     .scrollbar-content.open {
         transform: translateY(0);
         transition: transform 0.5s ease;
         visibility: visible;
-        margin-bottom: 38px;
+        
+        max-height: 1000px;
     }
 }
 
