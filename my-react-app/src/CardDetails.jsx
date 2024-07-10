@@ -10,12 +10,11 @@ function CardDetails({ data }) {
   return (
     <>
       <Header /> 
-    <section>
-        <div>
+    <section className='carddetails'>
         <img src={card.cover} alt={card.title} />
-        </div>
         <div>
         <h2>{card.title}</h2>
+        <p>{card.location}</p>
         </div>
     </section>
       <Footer /> 
