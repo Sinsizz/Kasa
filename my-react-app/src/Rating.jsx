@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-import starFilled from '../assets/star-filled.png'; 
-import starEmpty from '../assets/star-empty.png';  
+import starFilled from '/src/assets/star-filled.png'; 
+import starEmpty from '/src/assets/star-empty.png';  
 
 function Rating({ rating }) {
   const totalStars = 5;

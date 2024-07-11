@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Tag from './Tag';
 import Scrollbar from './Scrollbar.jsx';
-import Rating from './assets/Rating.jsx';
+import Rating from './Rating.jsx';
 import Profile from './Profile';
 
 
