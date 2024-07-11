@@ -2,7 +2,7 @@
 import starFilled from '../assets/star-filled.png'; // Assurez-vous d'avoir cette image
 import starEmpty from '../assets/star-empty.png';  // Assurez-vous d'avoir cette image
 
-function Rating ({ rating }) {
+function Rating({ rating }) {
   const totalStars = 5;
   const filledStars = parseInt(rating);
 

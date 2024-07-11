@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Tag from './Tag';
 import Scrollbar from './Scrollbar';
 import Profile from './Profile';
-import Rating from './Rating'
+import Rating from './Rating';
 
 function CardDetails({ data }) {
   const { cardId } = useParams();
