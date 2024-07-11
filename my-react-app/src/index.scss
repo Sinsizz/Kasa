@@ -95,12 +95,15 @@ footer {
     gap: 72px;
  h1{
     color: #FF6060;
-    font-size: 271px;
+    font-size: 273px;
     margin: 0;
     }
 
  p {
     color: #FF6060;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 14px;
  }
 
  .lien {
@@ -197,7 +200,6 @@ footer {
         transform: translateY(0);
         transition: transform 0.5s ease;
         visibility: visible;
-        
         max-height: 1000px;
     }
 }
