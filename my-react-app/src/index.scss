@@ -215,6 +215,30 @@ footer {
         object-fit: cover;
         border-radius: 25px;
     }
+
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+
+        .card-main-info {
+            flex: 1;
+          }
+          
+          .card-main-info h2 {
+            margin: 0;
+            color: #FF6060;
+            font-size: 36px;
+          }
+          
+          .card-main-info p {
+            margin: 5px 0 20px;
+            font-size: 18px;
+          }
+      }
+
+   
     
     .tag-container {
         display: flex;
@@ -268,8 +292,14 @@ footer {
         font-size: 18px;
         font-weight: 500;
         color: #FF6060;
+        
+        
+    }
+    .profile-name p {
+        margin: 0;
+        color: #FF6060;
+        font-size: 18px;
       }
-
     .profile-picture {
         width: 64px;
         height: 64px;
