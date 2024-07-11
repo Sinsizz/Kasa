@@ -18,23 +18,25 @@ function CardDetails({ data }) {
     <>
       <Header /> 
       <section className='carddetails'>
-        <img src={card.cover} alt={card.title} />
-        <div>
-          <h2>{card.title}</h2>
-          <p>{card.location}</p>
-          <Tag tags={card.tags} />
+        <img src={card.cover} alt={card.title} className="card-cover" />
+        <div className="card-info">
+          <div className="card-main-info">
+            <h2>{card.title}</h2>
+            <p>{card.location}</p>
+            <Tag tags={card.tags} />
+          </div>
           <Profile picture={card.host.picture} name={card.host.name} />
         </div>
         <div className="scrollbar-container">
-        <Scrollbar 
-          title="Description"
-          content={card.description}
-        />
-        <Scrollbar 
-          title="Équipements"
-          content={formatEquipments(card.equipments)}
-        />
-      </div>
+          <Scrollbar 
+            title="Description"
+            content={card.description}
+          />
+          <Scrollbar 
+            title="Équipements"
+            content={formatEquipments(card.equipments)}
+          />
+        </div>
       </section>
       <Footer /> 
     </>
