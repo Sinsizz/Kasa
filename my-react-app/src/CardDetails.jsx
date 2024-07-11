@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Tag from './Tag';
 import Scrollbar from './Scrollbar.jsx';
+import Profile from './Profile';
 
 function CardDetails({ data }) {
   const { cardId } = useParams();
@@ -22,6 +23,7 @@ function CardDetails({ data }) {
           <h2>{card.title}</h2>
           <p>{card.location}</p>
           <Tag tags={card.tags} />
+          <Profile picture={card.host.picture} name={card.host.name} />
         </div>
         <div className="scrollbar-container">
         <Scrollbar 
@@ -34,7 +36,6 @@ function CardDetails({ data }) {
         />
       </div>
       </section>
-      
       <Footer /> 
     </>
   );

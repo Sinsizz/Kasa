@@ -257,6 +257,28 @@ footer {
         
     }
 }     
+
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .profile-name {
+        font-size: 18px;
+        font-weight: 500;
+        color: #FF6060;
+      }
+
+    .profile-picture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+}
+  
+ 
      
 
   
