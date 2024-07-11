@@ -3,9 +3,10 @@ import { useParams } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Tag from './Tag';
-import Scrollbar from './Scrollbar';
+import Scrollbar from './Scrollbar.jsx';
+import Rating from './assets/Rating.jsx';
 import Profile from './Profile';
-import Rating from './Rating';
+
 
 function CardDetails({ data }) {
   const { cardId } = useParams();
@@ -26,8 +27,10 @@ function CardDetails({ data }) {
             <p>{card.location}</p>
             <Tag tags={card.tags} />
           </div>
-          <Profile picture={card.host.picture} name={card.host.name} />
-          <Rating rating={card.rating} />
+          <div className="host-info">
+            <Profile picture={card.host.picture} name={card.host.name} />
+            <Rating rating={card.rating} />
+          </div>
         </div>
         <div className="scrollbar-container">
           <Scrollbar 
