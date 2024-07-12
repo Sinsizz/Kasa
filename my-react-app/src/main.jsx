@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App.jsx';
-import AboutPage from './AboutPage'; // Importez votre composant pour la page "A Propos"
+import AboutPage from './AboutPage';
 import CardDetails from './CardDetails';
 import NotFound from './NotFound';
 import './index.css';
