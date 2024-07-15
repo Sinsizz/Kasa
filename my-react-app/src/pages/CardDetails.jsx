@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useParams } from 'react-router-dom';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import Tag from './Tag.jsx';
-import Scrollbar from './Scrollbar.jsx';
-import Rating from './Rating.jsx';
-import Profile from './Profile.jsx';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import Tag from '../components/Tag.jsx';
+import Scrollbar from '../components/Scrollbar.jsx';
+import Rating from '../components/Rating.jsx';
+import Profile from '../components/Profile.jsx';
 
 
 function CardDetails({ data }) {

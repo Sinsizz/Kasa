@@ -1,7 +1,7 @@
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import Card from './Card.jsx';
-import data from "./data.json";
+import data from "../data.json";
 
 function App() {
   return (

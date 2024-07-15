@@ -1,6 +1,6 @@
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import Scrollbar from './Scrollbar.jsx';
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import Scrollbar from '../components/Scrollbar.jsx';
 
 
 function AboutPage() {
