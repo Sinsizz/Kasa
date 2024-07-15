@@ -339,7 +339,7 @@ footer {
 }
 
 
-@media screen and (min-width: 360px) and (max-width: 600px) {
+@media screen and (min-width: 330px) and (max-width: 749px) {
 
     body {
         margin: 0;
@@ -358,17 +358,15 @@ footer {
     }
     
     nav {
-        width: 100%;
-        justify-content: space-between;
         display: flex;
-        flex-direction: row; 
-        
-            a {
-                font-size: 14px; 
-                margin: 0;
-                margin-bottom: 10px;
-            }
+        flex-direction: row;
+        justify-content: flex-end; 
+        width: 100%;
+        a { 
+            font-size: 14px;  
+            margin-bottom: 10px;
         }
+    }
 
     }
 
@@ -419,7 +417,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1072px) {
+@media screen and (min-width: 750px) and (max-width: 1072px) {
 body{
     margin: 0;
 }   
@@ -482,11 +480,10 @@ body{
                     justify-content: center; 
                     flex-direction: row;
                     flex-wrap: wrap;
-                    gap: 13px;
                     a {
                     .card{
-                            width: 216px;
-                            height: 216px;                    
+                            width: 266px;
+                            height: 266px;                    
                 }
             }
         }
