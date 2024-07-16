@@ -354,7 +354,7 @@ footer {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 47px;
+      width: 60px;
       height: 79px;
       cursor: pointer;
     }
@@ -365,15 +365,6 @@ footer {
   
     .right-arrow {
       right: 23px;
-    }
-  
-    .slide-number {
-      position: absolute;
-      bottom: 25px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #fff;
-      font-size: 18px;
     }
   }
 
@@ -426,48 +417,137 @@ footer {
             border-radius: 10px;
             
         }
+
+        .bannerimg2 {
+            width: 100%;
+            height: 100%;
+            margin-right: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+            
+        }
+
         .banner-text {
             font-size: 24px;
             width: 225px; 
             left: 145px; 
         }
-    }
-    .background {
-        background-color: white;
-        margin-bottom: 27px;
-        margin-top: 22px;
-        margin-right: 10px;
-        margin-left: 10px;
-        padding: 0;
 
-        .content{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 20px;
-                
-            a {
-                .card{
-                        width: 100%;
-                        height: 255px;       
-                }
-            }       
+        
+    }
+
+    .background {
+            background-color: white;
+            margin-bottom: 27px;
+            margin-top: 22px;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 0;
+    
+            .content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 20px;
+                    
+                a {
+                    .card{
+                            width: 100%;
+                            height: 255px;       
+                    }
+                }       
+            }
         }
-    }
-}
-.scrollbar {
-    .scrollbar-header { 
-        margin-left: 20px;
+    
+        .scrollbar {
+            .scrollbar-header { 
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;    
+            }
+            .scrollbar-content {
+                margin-left: 20px;
+                margin-right: 20px;
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+   
+
+
+
+
+.carddetails {
+margin-left: 20px;
         margin-right: 20px;
-        margin-top: 20px;    
-    }
-    .scrollbar-content {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 14px;
-        padding: 8px;
-    }
+        margin-bottom: 20px;
+
+        img {
+            height: 255px;
+            border-radius: 10px;
+        }
+
+        .card-info {
+            flex-direction: column;
+            margin-top: 15px;
+
+            .card-main-info {
+                h2 {
+                    font-size: 18px;
+                }
+                
+                p {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .host-info {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 15px;
+                gap: 10px;
+            }
+        }
+        .scrollbar-container {  
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 15px;
+            
 }
+
+        .profile {
+            .profile-name p {
+                font-size: 16px;
+              }
+            .profile-picture {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+              }
+        }
+        
+        .rating{
+            gap: 6px;
+        
+            .star {
+                width: 18px;
+                height: 50px;
+            }
+        }
+    }     
+} 
+
+.carrousel {
+    .arrow {
+      width: 25px;
+      height: 50px;
+    }
+  }
+    
+    
 
 
 
@@ -477,9 +557,6 @@ body{
     margin: 0;
 }   
         header {
-        
-       
-        
         margin: 20px;
         gap: 43px;
     
@@ -513,6 +590,16 @@ body{
                 border-radius: 25px;
                 
             }
+
+            .bannerimg2 {
+                width: 100%;
+                height: 100%;
+                margin-right: 20px;
+                margin-left: 20px;
+                border-radius: 10px;
+                  
+            }
+
             .banner-text {
                 font-size: 35px;
                 width: 500px; 
@@ -542,6 +629,11 @@ body{
                 }
             }
         }
+    }
+
+    .scrollbar-header {
+        margin-top: 20px;
+        margin-bottom: -15px;
     }
 }
 
