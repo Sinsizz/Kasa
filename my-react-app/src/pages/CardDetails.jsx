@@ -6,6 +6,7 @@ import Tag from '../components/Tag.jsx';
 import Scrollbar from '../components/Scrollbar.jsx';
 import Rating from '../components/Rating.jsx';
 import Profile from '../components/Profile.jsx';
+import Carrousel from '../components/Carrousel.jsx';
 
 
 function CardDetails({ data }) {
@@ -20,7 +21,7 @@ function CardDetails({ data }) {
     <>
       <Header /> 
       <section className='carddetails'>
-        <img src={card.cover} alt={card.title} className="card-cover" />
+      <Carrousel pictures={card.pictures} />     
         <div className="card-info">
           <div className="card-main-info">
             <h2>{card.title}</h2>
