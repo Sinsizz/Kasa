@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import Tag from '../components/Tag.jsx';
@@ -11,7 +11,12 @@ import Carrousel from '../components/Carrousel.jsx';
 
 function CardDetails({ data }) {
   const { cardId } = useParams();
-  const card = data[cardId];
+  const card = data.find(item => item.id === cardId);
+
+  // Si la carte n'est pas trouvée, redirigez vers NotFound
+  if (!card) {
+    return <Navigate to="/not-found" replace />;
+  }
 
   const formatEquipments = (equipments) => {
     return equipments.join('\n');
@@ -21,7 +26,7 @@ function CardDetails({ data }) {
     <>
       <Header /> 
       <section className='carddetails'>
-      <Carrousel pictures={card.pictures} />     
+      <Carrousel pictures={card.pictures} />
         <div className="card-info">
           <div className="card-main-info">
             <h2>{card.title}</h2>
