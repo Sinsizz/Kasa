@@ -3,7 +3,7 @@ import Footer from '../components/Footer.jsx';
 import Card from '../components/Card.jsx';
 import data from "../data.json";
 
-function App() {
+function Home() {
   return (
     <>
       <Header />
@@ -17,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
