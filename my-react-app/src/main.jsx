@@ -2,7 +2,6 @@ import data from "./data.json";
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home.jsx';
 import AboutPage from './pages/AboutPage.jsx';
 import CardDetails from './pages/CardDetails.jsx';
 import NotFound from './pages/NotFound';
