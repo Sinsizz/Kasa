@@ -38,6 +38,9 @@ const Carrousel = ({ pictures }) => {
         alt={`Slide ${currentIndex + 1}`} 
         className="carrousel-image"
       />
+       <div className="slide-number">
+        {currentIndex + 1} / {pictures.length}
+      </div>
     </div>
   );
 };
